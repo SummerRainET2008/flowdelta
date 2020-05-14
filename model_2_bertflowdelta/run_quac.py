@@ -34,11 +34,11 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
 from torch.utils.data.distributed import DistributedSampler
 
-from bert_flowdelta.pytorch_pretrained_bert2.tokenization import whitespace_tokenize, BasicTokenizer, BertTokenizer
-from bert_flowdelta.pytorch_pretrained_bert2.modeling import BertForQuestionAnswering
-from bert_flowdelta.pytorch_pretrained_bert2.optimization import BertAdam
-from bert_flowdelta.pytorch_pretrained_bert2.file_utils import PYTORCH_PRETRAINED_BERT_CACHE
-from bert_flowdelta.utils import dev_evaluate, write_quac, quac_performance
+from model_2_bertflowdelta.pytorch_pretrained_bert2.tokenization import whitespace_tokenize, BasicTokenizer, BertTokenizer
+from model_2_bertflowdelta.pytorch_pretrained_bert2.modeling import BertForQuestionAnswering
+from model_2_bertflowdelta.pytorch_pretrained_bert2.optimization import BertAdam
+from model_2_bertflowdelta.pytorch_pretrained_bert2.file_utils import PYTORCH_PRETRAINED_BERT_CACHE
+from model_2_bertflowdelta.utils import dev_evaluate, write_quac, quac_performance
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
                     datefmt = '%m/%d/%Y %H:%M:%S',
